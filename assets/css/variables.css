@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #4a9ffe;
+  --color-secondary: #ff88aa;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 40px;
+  --sp-6: 64px;
+  --sp-7: 144px;
+  --sp-8: 160px;
+  --sp-n1: -4px;
+  --sp-n2: -8px;
+  --sp-n3: -16px;
+  --sp-n4: -24px;
+  --sp-n5: -40px;
+  --sp-n6: -64px;
+  --sp-n7: -144px;
+  --sp-n8: -160px;
+}

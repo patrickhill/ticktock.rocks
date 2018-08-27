@@ -1,0 +1,61 @@
+@import "variables.css";
+@import "resets.css";
+@import "text.css";
+@import "colors.css";
+@import "spacers.css";
+@import "animations.css";
+
+
+
+
+
+
+
+
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+
+.container {
+  max-width: 672px;
+  margin: auto;
+}
+.grid {
+  display: block;
+  padding: 0 32px;
+}
+@media(min-width:768px) {
+  .grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(23, 1fr)
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.box-shadow-1 {
+  box-shadow: 0 13px 18px 0 rgba(0,0,0,0.08), 0 39px 53px 0 rgba(0,0,0,0.22);
+}
+.box-shadow-2 {
+  box-shadow: 0 13px 18px 0 rgba(0,0,0,0.08), 0 39px 53px 0 rgba(0,0,0,0.22);
+}
+
+

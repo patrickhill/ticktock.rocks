@@ -1,0 +1,80 @@
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  line-height: 1.4;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+h2,.h2 {
+  font-size: 20px;
+}
+.body-copy {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+.dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+ul.list-success,
+ul.list-error {
+  list-style: none;
+  padding-left: 24px;
+}
+ul.list-success li,
+ul.list-error li {
+  position: relative;
+}
+ul.list-success li:before,
+ul.list-error li:before {
+  content: '✓';
+  position: absolute;
+  left: -24px;
+}
+ul.list-error li:before {
+  content: 'x';
+}
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.bold {
+  font-weight: 600;
+}
+.small {
+  font-size: .7rem;
+}
+.text-center {
+  text-align: center;
+}

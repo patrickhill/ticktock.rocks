@@ -1,0 +1,27 @@
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-gray {
+  background-color: #f8f8f8;
+}
+.bg-white-transparent {
+  background-color: rgba(255,255,255,.3);
+}
+.bg-gradient {
+  background: linear-gradient(0.4turn, var(--color-secondary), var(--color-primary));
+}
+.text-white {
+  color: white;
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
