@@ -2,7 +2,8 @@
   --color-primary: #4a9ffe;
   --color-secondary: #ff88aa;
   
-  --timer-duration: 5s;
+  --timer-hero-duration: 5s;
+  --timer-duration: 120s;
   --timer-bg-color: #5bf;
   --timer-bar-color: #f66;
   --timer-size: 600px;

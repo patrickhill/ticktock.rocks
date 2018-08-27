@@ -112,6 +112,7 @@ body {
 .hemisphere-hero-wrap .left-hemisphere:after,
 .hemisphere-hero-wrap .right-hemisphere:after
 {
+  animation-duration: var(--timer-hero-duration);
   animation-iteration-count: infinite;
 }
 
