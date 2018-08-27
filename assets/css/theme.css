@@ -64,6 +64,11 @@ body {
   justify-content: center;
   flex-flow: column;
 }
+.hemisphere-hero-wrap {
+  position: relative;
+  width: var(--timer-hero-size);
+  height: var(--timer-hero-size);
+}
 .hemisphere-wrap {
   position: relative;
   width: var(--timer-size);
@@ -91,7 +96,7 @@ body {
  } 
 .left-hemisphere:after {
   background-image: linear-gradient(to left, var(--timer-bg-color) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
-  animation: right-half var(--timer-duration) linear forwards var(--timer-duration); 
+  animation: left-half var(--timer-duration) linear forwards; 
 }
 .right-hemisphere {
   -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
@@ -104,8 +109,22 @@ body {
   background-image: linear-gradient(to left, transparent 50%, red 50%, red 100%);
   animation: none;
 }
+.hemisphere-hero-wrap .left-hemisphere:after,
+.hemisphere-hero-wrap .right-hemisphere:after
+{
+  animation-iteration-count: infinite;
+}
+
+@keyframes left-half {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 @keyframes right-half {
-  to {
+  50%,100% {
     transform: rotate(180deg);
   }
 }
