@@ -6,12 +6,6 @@
 @import "animations.css";
 
 
-
-
-
-
-
-
 .btn {
   background-color: var(--color-primary);
   color: white;
@@ -59,3 +53,78 @@
 }
 
 
+
+
+
+
+body {
+  font-family: -apple-system, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.hemisphere-wrap {
+  position: relative;
+  width: var(--timer-size);
+  height: var(--timer-size);
+}
+.hemisphere,
+.hemisphere-clip {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hemisphere:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.left-hemisphere {
+  -webkit-mask-image: linear-gradient(to left, transparent 50%, black 50%);
+ } 
+.left-hemisphere:after {
+  background-image: linear-gradient(to left, var(--timer-bg-color) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+  animation: right-half var(--timer-duration) linear forwards var(--timer-duration); 
+}
+.right-hemisphere {
+  -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
+}
+.right-hemisphere:after {
+  background-image: linear-gradient(to right, var(--timer-bg-color) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+  animation: right-half var(--timer-duration) linear forwards;
+}
+.right-hemisphere-mask {
+  background-image: linear-gradient(to left, transparent 50%, red 50%, red 100%);
+  animation: none;
+}
+@keyframes right-half {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.hemisphere-clip {
+  transform: scale(.5);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-holder {
+  font-size: 100px;
+  text-align: center;
+}
+.text-holder div {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #888;
+}

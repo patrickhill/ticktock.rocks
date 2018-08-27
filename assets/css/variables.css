@@ -1,6 +1,13 @@
 :root {
   --color-primary: #4a9ffe;
   --color-secondary: #ff88aa;
+  
+  --timer-duration: 120s;
+  --timer-duration: 10s;
+  --timer-bg-color: #5bf;
+  --timer-bar-color: #f66;
+  --timer-size: 800px;
+
   --sp-1: 4px;
   --sp-2: 8px;
   --sp-3: 16px;
