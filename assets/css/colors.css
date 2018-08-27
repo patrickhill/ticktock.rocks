@@ -1,3 +1,6 @@
+.bg-black {
+	background-color: black;
+}
 .bg-primary {
   background-color: var(--color-primary);
 }
