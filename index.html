@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height:100%;">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TickTock - A simple visual timer</title>
   <meta name="description" content="A simple visual timer.">
@@ -11,17 +12,19 @@
   <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
 
 </head>
-<body>
-  <h1 class="my-5">Tick Tock</h1>
-  <a href="ticktock.html">
-  <div class="hemisphere-hero-wrap">
+<body class="bg-black text-white" style="height:100%;">
+
+  <div class="hemisphere-wrap">
     <div class="hemisphere right-hemisphere"></div>
     <div class="hemisphere left-hemisphere"></div>
-    <div class="hemisphere-clip bg-white">
+    <div class="hemisphere-clip bg-black text-white">
+      <span class="text-holder"></span>
     </div>
   </div>
-  </a>
 
+  <div>
+    <h2 class="my-4">Set Timer</h2>
+  </div>
 
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
