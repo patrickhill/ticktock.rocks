@@ -1,6 +1,12 @@
 :root {
   --color-primary: #4a9ffe;
   --color-secondary: #ff88aa;
+
+  --color-gray-darker: #131313;
+  --color-gray-dark: #888888;
+  --color-gray: #cccccc;
+  --color-gray-light: #e6e6e6;
+  --color-gray-lighter: #f8f8f8;
   
   --timer-hero-duration: 5s;
   --timer-duration: 120s;

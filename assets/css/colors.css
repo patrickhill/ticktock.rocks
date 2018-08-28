@@ -10,9 +10,6 @@
 .bg-white {
   background-color: white;
 }
-.bg-gray {
-  background-color: #f8f8f8;
-}
 .bg-white-transparent {
   background-color: rgba(255,255,255,.3);
 }
@@ -27,4 +24,20 @@
 }
 .text-primary {
   color: var(--color-primary);
+}
+
+.text-gray-darker {
+  color: var(--color-gray-darker);
+}
+.text-gray-dark {
+  color: var(--color-gray-dark);
+}
+.text-gray {
+  color: var(--color-gray);
+}
+.text-gray-light {
+  color: var(--color-gray-light);
+}
+.text-gray-lighter {
+  color: var(--color-gray-lighter);
 }
