@@ -15,11 +15,11 @@ h6,.h6 {
 h1 {
   font-size: 200px;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   line-height: .8;
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 0px;
+  left: 0px;
 }
 h2,.h2 {
   font-size: 20px;
@@ -83,4 +83,10 @@ ul.list-error li:before {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
 }

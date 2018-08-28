@@ -94,14 +94,14 @@ body {
   -webkit-mask-image: linear-gradient(to left, transparent 50%, black 50%);
  } 
 .left-hemisphere:after {
-  background-image: linear-gradient(to left, var(--timer-bg-color) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+  background-image: linear-gradient(to left, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
   animation: left-half var(--timer-duration) linear forwards; 
 }
 .right-hemisphere {
   -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
 }
 .right-hemisphere:after {
-  background-image: linear-gradient(to right, var(--timer-bg-color) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+  background-image: linear-gradient(to right, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
   animation: right-half var(--timer-duration) linear forwards;
 }
 .right-hemisphere-mask {
@@ -145,4 +145,20 @@ body {
   text-transform: uppercase;
   letter-spacing: .1em;
   color: #888;
+}
+
+.timer-set {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+input {
+  width: 40px;
+  border: none;
+  border-bottom: 1px solid var(--color-gray-dark);
+  color: var(--color-gray);
+  font-size: 30px ;
+}
+input::placeholder {
+  color: var(--color-gray);
 }

@@ -41,3 +41,19 @@
 .text-gray-lighter {
   color: var(--color-gray-lighter);
 }
+
+.bg-gray-darker {
+  background-color: var(--color-gray-darker);
+}
+.bg-gray-dark {
+  background-color: var(--color-gray-dark);
+}
+.bg-gray {
+  background-color: var(--color-gray);
+}
+.bg-gray-light {
+  background-color: var(--color-gray-light);
+}
+.bg-gray-lighter {
+  background-color: var(--color-gray-lighter);
+}
