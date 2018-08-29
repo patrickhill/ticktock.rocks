@@ -75,11 +75,11 @@ body {
   position: relative;
   width: var(--timer-size);
   height: var(--timer-size);
-  -webkit-mask-image: radial-gradient(transparent 30%, black 30%);
+  -webkit-mask-image: radial-gradient(transparent 35%, black 35%);
 }
 .hemisphere-wrap-outer:before,
 .hemisphere-wrap-outer:after {
-  /*z-index: -1;*/
+  z-index: -1;
 }
 .hemisphere-wrap-outer:before {
   content: "";
