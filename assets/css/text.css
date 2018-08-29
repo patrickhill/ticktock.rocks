@@ -1,6 +1,6 @@
 html {
   font-family: -apple-system, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.6;
 }
 h1,.h1,
@@ -27,7 +27,11 @@ h1.display,.h1.display {
 h2,.h2 {
   font-size: 20px;
 }
-.body-copy {
+p,.p {
+  font-family: -apple-system, sans-serif;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 0;
 }
 a {
   text-decoration: none;
