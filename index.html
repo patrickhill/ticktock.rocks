@@ -14,22 +14,18 @@
 </head>
 <body class="bg-gray-darker text-white" style="height:100%;">
 
-  <h1 class="text-gray-dark">Tick <br> Tock</h1>
+  <h1 class="text-gray-dark display">Tick <br> Tock</h1>
 
   <div class="hemisphere-wrap">
     <div class="hemisphere right-hemisphere"></div>
     <div class="hemisphere left-hemisphere"></div>
-    <div class="hemisphere-clip bg-black text-white">
-      <span class="text-holder"></span>
+    <div class="hemisphere-clip bg-black text-white pause-play">
+      pause play
     </div>
   </div>
 
-  <div class="timer-set text-gray text-right mr-4 mt-4">
-    <input class="bg-gray-darker py-3 text-center text-gray" type="text" name="fname" placeholder="0">
-    <input class="bg-gray-darker py-3 text-center text-gray" type="text" name="fname" placeholder="0">
-    :
-    <input class="bg-gray-darker py-3 text-center text-gray" type="text" name="fname" placeholder="0">
-    <input class="bg-gray-darker py-3 text-center text-gray" type="text" name="fname" placeholder="0">
+  <div class="timer-set text-gray text-right mr-4 mt-n4 h3">
+    <input id="timerValue" class="h1 text-center text-gray" type="text" name="fname" maxlength="4">
     <h2 class="my-4">Set Timer</h2>
   </div>
 
