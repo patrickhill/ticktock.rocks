@@ -89,7 +89,7 @@ body {
   top: -50%;
   left: 50%;
   border: 1px solid var(--color-gray-dark);
-  transform: rotate(45deg);
+  animation: dash var(--timer-duration) linear forwards; 
   transform-origin: center center;
 }
 .hemisphere-wrap-outer:after {
@@ -156,6 +156,11 @@ body {
 @keyframes right-half {
   50%,100% {
     transform: rotate(180deg);
+  }
+}
+@keyframes dash {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
