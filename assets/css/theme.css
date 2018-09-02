@@ -81,7 +81,7 @@ body {
 .hemisphere-wrap-outer:after {
   z-index: -1;
 }
-.hemisphere-wrap-outer:before {
+.hemisphere-wrap-outer .dash {
   content: "";
   width: 1px;
   height: 200%;
@@ -112,7 +112,7 @@ body {
   top: 0;
   left: 0;
 }
-.hemisphere:after {
+.hemisphere .hemi-inner {
     content: "";
     position: absolute;
     left: 0;
@@ -123,14 +123,14 @@ body {
 .left-hemisphere {
   -webkit-mask-image: linear-gradient(to left, transparent 50%, black 50%);
  } 
-.left-hemisphere:after {
+.left-hemisphere .hemi-inner {
   background-image: linear-gradient(to left, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
   animation: left-half var(--timer-duration) linear forwards; 
 }
 .right-hemisphere {
   -webkit-mask-image: linear-gradient(to right, transparent 50%, black 50%);
 }
-.right-hemisphere:after {
+.right-hemisphere .hemi-inner {
   background-image: linear-gradient(to right, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
   animation: right-half var(--timer-duration) linear forwards;
 }
