@@ -10,16 +10,29 @@
 
 document.getElementById('timerValue').value = '120';
 
-var pausePlay = document.getElementById('pause-play');
+var timerPausePlay = document.getElementById('pause-play');
+var timerStart = document.getElementById('timer-start');
+var timerValue = document.getElementById('timerValue');
 var animations = document.getElementsByClassName('animates');
 
-pausePlay.addEventListener("click", function( event ) {
+timerPausePlay.addEventListener("click", function( event ) {
   Array.prototype.forEach.call(animations, function(el) {
-	    // console.log(el.style.WebkitAnimationPlayState);
-	    if (el.style.WebkitAnimationPlayState === "paused") {
-	    	el.style.WebkitAnimationPlayState = "running";
+	    // console.log(el.style.animationPlayState);
+	    if (el.style.animationPlayState === "paused") {
+	    	el.style.animationPlayState = "running";
 	    } else {
-	    	el.style.WebkitAnimationPlayState = "paused";
+	    	el.style.animationPlayState = "paused";
 	    }
 	});
 }, false);
+
+timerStart.addEventListener("click", function( event ) {
+  Array.prototype.forEach.call(animations, function(el) {
+  	el.classList.remove('animates');
+  	void el.offsetWidth; // triggers reflow
+  	el.style["animation-duration"] = timerValue.value + 's';
+  	el.classList.add('animates');
+  	el.style.animationPlayState = "running";
+	});
+}, false);
+

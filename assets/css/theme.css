@@ -89,8 +89,10 @@ body {
   top: -50%;
   left: 50%;
   border: 1px solid var(--color-gray-dark);
-  animation: dash var(--timer-duration) linear forwards; 
   transform-origin: center center;
+}
+.hemisphere-wrap-outer .dash.animates {
+  animation: dash var(--timer-duration) linear forwards; 
 }
 .hemisphere-wrap-outer:after {
   content: "";
@@ -125,6 +127,8 @@ body {
  } 
 .left-hemisphere .hemi-inner {
   background-image: linear-gradient(to left, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+}
+.left-hemisphere .hemi-inner.animates {
   animation: left-half var(--timer-duration) linear forwards; 
 }
 .right-hemisphere {
@@ -132,6 +136,8 @@ body {
 }
 .right-hemisphere .hemi-inner {
   background-image: linear-gradient(to right, var(--color-gray-dark) 50%, var(--timer-bar-color) 50%, var(--timer-bar-color) 100%);
+}
+.right-hemisphere .hemi-inner.animates {
   animation: right-half var(--timer-duration) linear forwards;
 }
 .right-hemisphere-mask {
@@ -204,4 +210,8 @@ input{
 .pause-play:hover {
   background-color: var(--color-gray-dark);
   box-shadow: 0px 40px 80px rgba(0,0,0,.6);
+}
+
+.start-timer {
+  cursor: pointer;
 }
