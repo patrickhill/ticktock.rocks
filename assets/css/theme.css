@@ -258,3 +258,6 @@ input{
 .play .arrow-right {
   border-width: 14px;
 }
+#timerValue:focus {
+  outline: none;
+}
