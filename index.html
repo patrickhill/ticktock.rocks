@@ -26,14 +26,25 @@
         <div class="hemi-inner animates"></div>
       </div>
     </div>
-    <div id="pause-play" class="hemisphere-clip text-white pause-play">
-      pause play
+    <div id="pause-play" class="hemisphere-clip text-white pause-play"
+      style="display: flex;justify-content: center;align-items: center;" 
+    >
+      <div class="pause"></div>
+      <div class="pause-play-divider"></div>
+      <div class="play">
+        <div class="arrow-right"></div>
+      </div>
     </div>
   </div>
 
   <div class="timer-set text-gray text-right mr-4 mt-n4 h3">
     <input id="timerValue" class="h1 text-center text-gray" type="text" name="fname" maxlength="4">
-    <h2 id="timer-start" class="my-4 text-center start-timer">Set Timer</h2>
+    <h2 id="timer-start" class="my-4 text-center start-timer" 
+      style="display: flex; justify-content: center; align-items: center;"
+    >
+      Set Timer
+      <div class="arrow-right ml-3"></div>
+    </h2>
   </div>
 
   <script type="text/javascript" src="assets/js/app.js"></script>
