@@ -8,7 +8,7 @@
 // var compiledText = "<div>timer set for</div>" + timerDuration
 // timerText.innerHTML = compiledText;
 
-document.getElementById('timerValue').value = '120';
+document.getElementById('timerValue').value = '5';
 
 var timerPausePlay = document.getElementById('pause-play');
 var timerStart = document.getElementById('timer-start');

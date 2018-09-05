@@ -9,13 +9,13 @@
   --color-gray-lighter: #f8f8f8;
   
   --timer-hero-duration: 5s;
-  --timer-duration: 120s;
+  --timer-duration: 5s;
   --timer-bg-color: #5bf;
   --timer-bar-color: #f66;
-  --timer-size: 600px;
+  --timer-size: 540px;
   --timer-hero-size: 400px;
 
-  --font-size-h1: 150px;
+  --font-size-h1: 130px;
 
   --sp-1: 4px;
   --sp-2: 8px;

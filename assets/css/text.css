@@ -18,6 +18,7 @@ h6,.h6 {
 h1,.h1 {
   font-size: var(--font-size-h1);
   text-transform: uppercase;
+  opacity: .4;
 }
 h1.display,.h1.display {
   position: absolute;
@@ -25,7 +26,7 @@ h1.display,.h1.display {
   left: 0px;
 }
 h2,.h2 {
-  font-size: 20px;
+  font-size: 14px;
 }
 p,.p {
   font-family: -apple-system, sans-serif;

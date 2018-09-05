@@ -88,8 +88,9 @@ body {
   position: absolute;
   top: -50%;
   left: 50%;
-  border: 1px solid var(--color-gray-dark);
+  background-color: var(--color-gray);
   transform-origin: center center;
+  opacity: .6;
 }
 .hemisphere-wrap-outer .dash.animates {
   animation: dash var(--timer-duration) linear forwards; 
@@ -101,7 +102,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid var(--color-gray-dark);
+  border: 1px solid var(--color-gray);
+  opacity: .4;
   transform: scale(1.5);
   border-radius: 100%;
 }
@@ -198,10 +200,12 @@ body {
   right: 0;
 }
 input{
-  width: 320px;
+  margin-right: 24px;
+  width: 220px;
+  height: 160px;
   color: var(--color-gray);
   vertical-align: middle;
-  font-size: 130px !important;
+  font-size: 80px !important;
   font-weight: 100;
   background-color: transparent !important;
   border: none;
@@ -224,10 +228,10 @@ input{
   width: 0; 
   height: 0; 
   display: inline-block;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
   
-  border-left: 8px solid var(--timer-bar-color);
+  border-left: 6px solid var(--timer-bar-color);
 }
 .pause,
 .pause-play-divider,
@@ -238,8 +242,8 @@ input{
 .pause:before,
 .pause:after {
   content: "";
-  width: 8px;
-  height: 24px;
+  width: 4px;
+  height: 16px;
   display: inline-block;
   background-color: var(--timer-bar-color);
 }
@@ -248,7 +252,7 @@ input{
 }
 .pause-play-divider {
   width: 1px;
-  height: 32px;
+  height: 24px;
   transform: rotate(45deg);
   transform-origin: center center;
   display: inline-block;
@@ -256,7 +260,7 @@ input{
   margin: 0 40px;
 }
 .play .arrow-right {
-  border-width: 14px;
+  border-width: 10px;
 }
 #timerValue:focus {
   outline: none;
