@@ -206,7 +206,7 @@ body {
 }
 
 .timer-set {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 }
@@ -214,11 +214,19 @@ input{
   width: 320px;
   color: var(--color-gray);
   vertical-align: middle;
-  font-size: 130px !important;
+  font-size: 80px !important;
   font-weight: 100;
   background-color: transparent !important;
   border: none;
   border-bottom: 1px solid var(--color-gray);
+}
+@media(min-width:768px) {
+  .timer-set {
+    position: absolute;
+  }
+  input{
+    font-size: 130px !important;
+  }
 }
 .pause-play {
   cursor: pointer;
