@@ -73,9 +73,15 @@ body {
 }
 .hemisphere-wrap {
   position: relative;
-  width: var(--timer-size);
-  height: var(--timer-size);
-  -webkit-mask-image: radial-gradient(transparent 35%, black 35%);
+  width: 90vw;
+  height: 90vw;
+  -webkit-mask-image: radial-gradient(transparent 35%, black 35%); 
+}
+@media (min-width:768px) {
+  .hemisphere-wrap {
+    width: var(--timer-size);
+    height: var(--timer-size);
+  }
 }
 .hemisphere-wrap-outer:before,
 .hemisphere-wrap-outer:after {
@@ -102,8 +108,14 @@ body {
   top: 0;
   left: 0;
   border: 1px solid var(--color-gray-dark);
-  transform: scale(1.5);
+  transform: scale(1.4);
   border-radius: 100%;
+  display: none;
+}
+@media(min-width:768px) {
+  .hemisphere-wrap-outer:after {
+    display: block;
+  }
 }
 .hemisphere,
 .hemisphere-clip {
