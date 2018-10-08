@@ -62,6 +62,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  overflow-x: hidden;
 }
 .hemisphere-hero-wrap {
   position: relative;
